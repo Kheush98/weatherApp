@@ -32,7 +32,7 @@ function App() {
 
   const getWeather = async () => {
     try {
-      const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lal}&lon=${long}&appid=49dbd835a16c456637c64a8e692d115b`)
+      const response = await axios.get(`https://api.openweathermap.org/data/2.5/weather?lat=${lal}&lon=${long}&appid={API_KEY}`)
       setWeather(response.data)
     } catch (error) {
       console.error(error)
